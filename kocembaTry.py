@@ -302,6 +302,9 @@ algo = algo.split()
 
 direct = 'images/'
 
+print("hold cube in position")
+time.sleep(3)
+
 for step in algo:
     photo = cv2.imread(direct+step+'.png')
     cv2.imshow("step",photo)
@@ -316,3 +319,5 @@ print("yay!!!")
 #orange = L
 #blue = B
 #yellow = D
+
+input()
